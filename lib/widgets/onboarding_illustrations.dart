@@ -229,8 +229,8 @@ class _ReceiverPhoneContent extends StatelessWidget {
   }
 }
 
-class AndroidIosIllustration extends StatelessWidget {
-  const AndroidIosIllustration({super.key});
+class NearbyDevicesIllustration extends StatelessWidget {
+  const NearbyDevicesIllustration({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -251,10 +251,10 @@ class AndroidIosIllustration extends StatelessWidget {
                 top: 10 * scale,
                 child: _PlatformPhone(
                   width: phoneWidth,
-                  label: 'Android',
-                  icon: Icons.android,
-                  iconColor: AppColors.androidGreen,
-                  ringColor: AppColors.androidGreen,
+                  label: 'Receive',
+                  icon: Icons.apple,
+                  iconColor: AppColors.iosBlue,
+                  ringColor: AppColors.iosBlue,
                 ),
               ),
               Positioned(
@@ -262,7 +262,7 @@ class AndroidIosIllustration extends StatelessWidget {
                 bottom: 6 * scale,
                 child: _PlatformPhone(
                   width: phoneWidth,
-                  label: 'iOS',
+                  label: 'Send',
                   icon: Icons.apple,
                   iconColor: AppColors.iosBlue,
                   ringColor: AppColors.iosBlue,

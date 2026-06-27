@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,12 +17,17 @@ class HowToConnectScreen extends StatefulWidget {
 class _HowToConnectScreenState extends State<HowToConnectScreen>
     with SingleTickerProviderStateMixin {
   late final TabController _tabController;
+  late final bool _showAndroidTab;
 
   @override
   void initState() {
     super.initState();
     AppTheme.setLightStatusBar();
-    _tabController = TabController(length: 3, vsync: this);
+    _showAndroidTab = !Platform.isIOS;
+    _tabController = TabController(
+      length: _showAndroidTab ? 3 : 2,
+      vsync: this,
+    );
   }
 
   @override
@@ -32,6 +39,37 @@ class _HowToConnectScreenState extends State<HowToConnectScreen>
   @override
   Widget build(BuildContext context) {
     final strings = S.of(context);
+
+    final tabs = <Tab>[
+      Tab(text: strings.iosTab),
+      if (_showAndroidTab) Tab(text: strings.androidTab),
+      Tab(text: strings.webTab),
+    ];
+
+    final tabViews = <Widget>[
+      _GuideList(
+        steps: [
+          strings.step1Ios,
+          strings.step2Ios,
+          strings.step3Ios,
+        ],
+      ),
+      if (_showAndroidTab)
+        _GuideList(
+          steps: [
+            strings.step1Android,
+            strings.step2Ios,
+            strings.step3Ios,
+          ],
+        ),
+      _GuideList(
+        steps: [
+          strings.step1Web,
+          strings.step2Ios,
+          strings.step3Ios,
+        ],
+      ),
+    ];
 
     return Scaffold(
       backgroundColor: const Color(0xFFF2F2F7),
@@ -70,38 +108,12 @@ class _HowToConnectScreenState extends State<HowToConnectScreen>
                 fontWeight: FontWeight.w600,
                 fontSize: 15,
               ),
-              tabs: [
-                Tab(text: strings.iosTab),
-                Tab(text: strings.androidTab),
-                Tab(text: strings.webTab),
-              ],
+              tabs: tabs,
             ),
             Expanded(
               child: TabBarView(
                 controller: _tabController,
-                children: [
-                  _GuideList(
-                    steps: [
-                      strings.step1Ios,
-                      strings.step2Ios,
-                      strings.step3Ios,
-                    ],
-                  ),
-                  _GuideList(
-                    steps: [
-                      strings.step1Android,
-                      strings.step2Ios,
-                      strings.step3Ios,
-                    ],
-                  ),
-                  _GuideList(
-                    steps: [
-                      strings.step1Web,
-                      strings.step2Ios,
-                      strings.step3Ios,
-                    ],
-                  ),
-                ],
+                children: tabViews,
               ),
             ),
           ],

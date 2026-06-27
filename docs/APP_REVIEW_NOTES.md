@@ -40,7 +40,7 @@ Use **two real devices** on the **same Wi‑Fi network**.
 7. Enter the **PIN** if prompted (also required for nearby-receiver pairing).
 8. On Device B, tap **Select Files**, choose one or more files, then tap **Send Directly**.
 9. On Device A, incoming transfer progress should appear; received files should show in the **Received Files** list.
-10. On Device A, open a received file action: **Share** (optional iOS share sheet / AirDrop export) or **Delete**.
+10. On Device A, open a received file action: **Share** (optional iOS share sheet export) or **Delete**.
 
 ### Optional: Nearby receivers (same Wi‑Fi)
 
@@ -105,7 +105,7 @@ App uses standard iOS networking only. **ITSAppUsesNonExemptEncryption** is set 
 - **Public/corporate/guest Wi‑Fi** may block device-to-device traffic; transfer may fail with a network error.
 - The **receiver must keep the app open** with receiving active during transfer.
 - **Multipeer** requires **two real iPhones**; the iOS Simulator has limited Multipeer support.
-- **AirDrop / share sheet** is an **optional export** for already-received files, not the primary transfer method.
+- **Share sheet** is an **optional export** for already-received files, not the primary transfer method.
 
 ---
 

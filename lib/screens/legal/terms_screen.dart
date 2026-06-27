@@ -64,7 +64,7 @@ Your Responsibilities
 You are responsible for the files you send and receive and for complying with applicable laws. Do not use File Share to send unlawful, harmful, or infringing content. You are responsible for confirming you trust the device you connect to before entering a PIN or sending files.
 
 Optional Export Through Other Apps
-After receiving files, you may optionally share or export them using the iOS share sheet (for example AirDrop or other apps). That step is optional. Sharing through AirDrop, Mail, Messages, or other apps is subject to those services' own terms and policies.
+After receiving files, you may optionally share or export them using the iOS share sheet. That step is optional and is subject to the terms and policies of the app you select.
 
 No Warranty
 File Share is provided "as is" without warranties of any kind. We do not guarantee uninterrupted, secure, or error-free operation on every device or network.

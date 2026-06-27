@@ -429,7 +429,7 @@ class LocalShareServer {
 
   ShareResponse _buildHomePageResponse(Map<String, String> queryParameters) {
     final token = queryParameters['token'] ?? _token ?? '';
-    final name = _deviceName ?? 'Quick Share';
+    final name = _deviceName ?? 'File Share';
     return ShareResponse(
       statusCode: HttpStatus.ok,
       contentType: 'text/html; charset=utf-8',

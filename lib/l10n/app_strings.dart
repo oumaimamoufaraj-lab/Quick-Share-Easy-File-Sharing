@@ -156,15 +156,15 @@ class S {
       ]);
 
   String get sendHint => _t(const [
-        'On the same Wi‑Fi, scan a receiver QR code to start a secure PIN session, select files, then send directly. Optional: export via AirDrop or other apps.',
-        'उसी Wi‑Fi पर रिसीवर QR स्कैन करके सुरक्षित PIN सत्र शुरू करें, फ़ाइलें चुनें और सीधे भेजें। वैकल्पिक: AirDrop या अन्य ऐप।',
-        'Di Wi‑Fi yang sama, pindai QR penerima untuk sesi PIN aman, pilih file, lalu kirim langsung. Opsional: AirDrop atau app lain.',
-        'Sur le même Wi‑Fi, scannez le QR pour une session PIN sécurisée, choisissez les fichiers et envoyez. Option : AirDrop ou autre app.',
-        'Im gleichen WLAN QR scannen, PIN-Sitzung starten, Dateien wählen und direkt senden. Optional: AirDrop oder andere Apps.',
-        'En la misma Wi‑Fi, escanea el QR para una sesión PIN segura, elige archivos y envía directo. Opcional: AirDrop u otra app.',
-        'Na mesma Wi‑Fi, escaneie o QR para sessão PIN segura, escolha arquivos e envie direto. Opcional: AirDrop ou outro app.',
-        'Sulla stessa Wi‑Fi, scansiona il QR per sessione PIN sicura, scegli i file e invia. Opzionale: AirDrop o altra app.',
-        'В той же Wi‑Fi отсканируйте QR для сессии с PIN, выберите файлы и отправьте. Опционально: AirDrop или другое приложение.',
+        'On the same Wi‑Fi, scan a receiver QR code to start a secure PIN session, select files, then send directly.',
+        'उसी Wi‑Fi पर रिसीवर QR स्कैन करके सुरक्षित PIN सत्र शुरू करें, फ़ाइलें चुनें और सीधे भेजें।',
+        'Di Wi‑Fi yang sama, pindai QR penerima untuk sesi PIN aman, pilih file, lalu kirim langsung.',
+        'Sur le même Wi‑Fi, scannez le QR pour une session PIN sécurisée, choisissez les fichiers et envoyez.',
+        'Im gleichen WLAN QR scannen, PIN-Sitzung starten, Dateien wählen und direkt senden.',
+        'En la misma Wi‑Fi, escanea el QR para una sesión PIN segura, elige archivos y envía directo.',
+        'Na mesma Wi‑Fi, escaneie o QR para sessão PIN segura, escolha arquivos e envie direto.',
+        'Sulla stessa Wi‑Fi, scansiona il QR per sessione PIN sicura, scegli i file e invia.',
+        'В той же Wi‑Fi отсканируйте QR для сессии с PIN, выберите файлы и отправьте.',
       ]);
 
   String get receiveTitle => _t(const [
@@ -372,15 +372,15 @@ class S {
       ]);
 
   String get shareSuccess => _t(const [
-        'Share sheet opened. Optionally export via AirDrop or another app.',
-        'शेयर शीट खुली। वैकल्पिक रूप से AirDrop या अन्य ऐप से निर्यात करें।',
-        'Lembar berbagi dibuka. Opsional: ekspor via AirDrop atau app lain.',
-        'Feuille de partage ouverte. Export optionnel via AirDrop ou une autre app.',
-        'Teilen-Dialog geöffnet. Optional über AirDrop oder eine andere App exportieren.',
-        'Hoja de compartir abierta. Exportación opcional vía AirDrop u otra app.',
-        'Folha aberta. Exportação opcional via AirDrop ou outro app.',
-        'Foglio di condivisione aperto. Esportazione opzionale via AirDrop o altra app.',
-        'Меню «Поделиться» открыто. Опциональный экспорт через AirDrop или другое приложение.',
+        'Share sheet opened. You can export the file with another app if you choose.',
+        'शेयर शीट खुली। आप चाहें तो किसी अन्य ऐप से निर्यात कर सकते हैं।',
+        'Lembar berbagi dibuka. Anda dapat mengekspor dengan app lain jika mau.',
+        'Feuille de partage ouverte. Vous pouvez exporter avec une autre app si vous le souhaitez.',
+        'Teilen-Dialog geöffnet. Sie können die Datei optional mit einer anderen App exportieren.',
+        'Hoja de compartir abierta. Puedes exportar con otra app si lo deseas.',
+        'Folha aberta. Você pode exportar com outro app se quiser.',
+        'Foglio di condivisione aperto. Puoi esportare con un\'altra app se lo desideri.',
+        'Меню «Поделиться» открыто. При желании можно экспортировать через другое приложение.',
       ]);
 
   String get pickError => _t(const [
@@ -432,39 +432,39 @@ class S {
       ]);
 
   String get onboarding2Title => _t(const [
-        'Connect Android to iOS',
-        'Android से iOS कनेक्ट करें',
-        'Hubungkan Android ke iOS',
-        'Connecter Android et iOS',
-        'Android mit iOS verbinden',
-        'Conectar Android con iOS',
-        'Conectar Android ao iOS',
-        'Connetti Android a iOS',
-        'Подключите Android к iOS',
+        'Share With Nearby Devices',
+        'पास के डिवाइस के साथ साझा करें',
+        'Bagikan ke Perangkat Terdekat',
+        'Partager avec des appareils à proximité',
+        'Mit Geräten in der Nähe teilen',
+        'Compartir con dispositivos cercanos',
+        'Compartilhar com dispositivos próximos',
+        'Condividi con dispositivi nelle vicinanze',
+        'Поделиться с устройствами поблизости',
       ]);
 
   String get onboarding2TitleCompact => _t(const [
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
-        'Android ↔ iOS',
+        'Nearby Devices',
+        'पास के डिवाइस',
+        'Perangkat Terdekat',
+        'Appareils proches',
+        'Geräte in der Nähe',
+        'Dispositivos cercanos',
+        'Dispositivos próximos',
+        'Dispositivi vicini',
+        'Устройства рядом',
       ]);
 
   String get onboarding2Subtitle => _t(const [
-        'Share files directly between Android and iOS on the same local Wi‑Fi network with a secure session.',
-        'सुरक्षित सत्र के साथ उसी स्थानीय Wi‑Fi पर Android और iOS के बीच सीधे फ़ाइलें साझा करें।',
-        'Bagikan file langsung antara Android dan iOS di jaringan Wi‑Fi lokal yang sama dengan sesi aman.',
-        'Partagez des fichiers directement entre Android et iOS sur le même réseau Wi‑Fi local avec une session sécurisée.',
-        'Teilen Sie Dateien direkt zwischen Android und iOS im gleichen lokalen WLAN mit einer sicheren Sitzung.',
-        'Comparte archivos directamente entre Android e iOS en la misma red Wi‑Fi local con una sesión segura.',
-        'Compartilhe arquivos diretamente entre Android e iOS na mesma rede Wi‑Fi local com uma sessão segura.',
-        'Condividi file direttamente tra Android e iOS sulla stessa rete Wi‑Fi locale con una sessione sicura.',
-        'Передавайте файлы напрямую между Android и iOS в одной локальной Wi‑Fi сети с защищённой сессией.',
+        'Discover receivers on the same Wi‑Fi network, enter a PIN, and transfer files directly with live progress.',
+        'उसी Wi‑Fi नेटवर्क पर रिसीवर खोजें, PIN दर्ज करें, और लाइव प्रगति के साथ सीधे फ़ाइलें ट्रांसफ़र करें।',
+        'Temukan penerima di jaringan Wi‑Fi yang sama, masukkan PIN, dan transfer file langsung dengan progres langsung.',
+        'Découvrez les récepteurs sur le même Wi‑Fi, entrez le PIN et transférez avec suivi en direct.',
+        'Empfänger im gleichen WLAN finden, PIN eingeben und Dateien mit Live-Fortschritt übertragen.',
+        'Descubre receptores en la misma Wi‑Fi, introduce el PIN y transfiere con progreso en vivo.',
+        'Encontre receptores na mesma Wi‑Fi, digite o PIN e transfira com progresso ao vivo.',
+        'Trova ricevitori sulla stessa Wi‑Fi, inserisci il PIN e trasferisci con progresso live.',
+        'Найдите получателей в той же Wi‑Fi, введите PIN и передавайте файлы с отображением прогресса.',
       ]);
 
   String get onboarding3Title => _t(const [
@@ -528,15 +528,15 @@ class S {
       ]);
 
   String get step1Ios => _t(const [
-        'On the receiving iPhone, open Receive and tap Start Receiving on the same Wi‑Fi.',
-        'रिसीविंग iPhone पर Receive खोलें और Start Receiving टैप करें।',
-        'Di iPhone penerima, buka Terima dan ketuk Mulai Menerima.',
-        'Sur l\'iPhone destinataire, ouvrez Recevoir et démarrez la réception.',
-        'Auf dem empfangenden iPhone Empfang starten.',
-        'En el iPhone receptor, abre Recibir e inicia la recepción.',
-        'No iPhone receptor, abra Receber e inicie o recebimento.',
-        'Su iPhone ricevente, apri Ricevi e avvia la ricezione.',
-        'На принимающем iPhone откройте «Получить» и начните приём.',
+        'On the receiving iPhone or iPad, open Receive and tap Start Receiving on the same Wi‑Fi.',
+        'रिसीविंग iPhone या iPad पर Receive खोलें और Start Receiving टैप करें।',
+        'Di iPhone atau iPad penerima, buka Terima dan ketuk Mulai Menerima.',
+        'Sur l\'iPhone ou iPad destinataire, ouvrez Recevoir et démarrez la réception.',
+        'Auf dem empfangenden iPhone oder iPad Empfang starten.',
+        'En el iPhone o iPad receptor, abre Recibir e inicia la recepción.',
+        'No iPhone ou iPad receptor, abra Receber e inicie o recebimento.',
+        'Su iPhone o iPad ricevente, apri Ricevi e avvia la ricezione.',
+        'На принимающем iPhone или iPad откройте «Получить» и начните приём.',
       ]);
 
   String get step2Ios => _t(const [

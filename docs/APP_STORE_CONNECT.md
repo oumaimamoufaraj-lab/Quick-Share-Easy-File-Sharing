@@ -13,7 +13,7 @@ Use this file when filling out **App Store Connect** for **File Share: Easy File
 | **SKU** | (your choice, e.g. `file-share-easy-001`) |
 | **Primary language** | English (U.S.) |
 | **Version** | 1.0.0 |
-| **Build** | 1 |
+| **Build** | 3 |
 
 ---
 
@@ -61,7 +61,6 @@ FEATURES
 • Optional offline transfer between Apple devices when supported
 • Chunked uploads for large files, retry, and cancel
 • Received files can be opened, saved, shared, or deleted
-• Optional export via AirDrop or other apps after receiving
 • Free to use with third-party ads (Google AdMob)
 
 REQUIREMENTS
@@ -81,7 +80,7 @@ Contact: Quick-Share235@gmail.com
 ## Keywords (100 characters max, comma-separated)
 
 ```
-file transfer,wifi,qr,share,photos,videos,local,nearby,pin,send,receive,cross platform
+file transfer,wifi,qr,share,photos,videos,local,nearby,pin,send,receive
 ```
 
 ---

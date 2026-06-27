@@ -99,8 +99,8 @@ File Share requests permissions only when needed for features you use:
 
 These permissions are not requested for advertising.
 
-Optional Share Sheet / AirDrop
-After you receive files, you may optionally export them using the iOS share sheet (for example AirDrop, Mail, or Messages). That export is your choice and is handled by iOS and the app you select. File Share does not require AirDrop or any third-party app to complete a direct transfer.
+Optional Share Sheet Export
+After you receive files, you may optionally export them using the iOS share sheet (for example Mail or Messages). That export is your choice and is handled by iOS and the app you select. File Share does not require any third-party app to complete a direct transfer.
 
 Children's Privacy
 File Share is not directed to children under 13, and we do not knowingly collect information from children.

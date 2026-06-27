@@ -55,7 +55,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         title: strings.onboarding2Title,
         compactTitle: strings.onboarding2TitleCompact,
         subtitle: strings.onboarding2Subtitle,
-        illustration: const AndroidIosIllustration(),
+        illustration: const NearbyDevicesIllustration(),
       ),
       OnboardingPageData(
         title: strings.onboarding3Title,

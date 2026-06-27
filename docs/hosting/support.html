@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — File Share: Easy File Sharing</title>
+  <style>
+    :root {
+      --primary-blue: #007AFF;
+      --splash-blue: #1E88E5;
+      --light-blue: #E3F2FD;
+      --lavender: #E8E0F5;
+      --peach: #FFE8D6;
+      --text-dark: #1A1A1A;
+      --text-grey: #8E8E93;
+      --divider: #E5E5EA;
+      --card-border: #E0E0E0;
+      --white: #FFFFFF;
+      --bg: #F8FAFC;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text-dark);
+      background: var(--bg);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--splash-blue) 0%, var(--primary-blue) 100%);
+      color: var(--white);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .hero-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 16px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero .app-name {
+      margin: 0;
+      font-size: 1rem;
+      opacity: 0.92;
+      font-weight: 500;
+    }
+
+    .hero .updated {
+      margin: 12px 0 0;
+      font-size: 0.875rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: -24px auto 48px;
+      padding: 0 16px;
+    }
+
+    .contact-hero-card {
+      background: var(--white);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 24px rgba(0, 122, 255, 0.08);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-hero-card h2 {
+      margin: 0 0 10px;
+      font-size: 1.125rem;
+      color: var(--splash-blue);
+      font-weight: 600;
+    }
+
+    .contact-hero-card p {
+      margin: 0 0 16px;
+      color: #333;
+    }
+
+    .email-btn {
+      display: inline-block;
+      background: var(--primary-blue);
+      color: var(--white) !important;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 12px 24px;
+      border-radius: 12px;
+      transition: background 0.2s;
+    }
+
+    .email-btn:hover {
+      background: var(--splash-blue);
+    }
+
+    .section {
+      background: var(--white);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--splash-blue);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--primary-blue);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .section p {
+      margin: 0 0 12px;
+      color: #333;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    ol.steps {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: #333;
+    }
+
+    ol.steps li {
+      margin: 10px 0;
+      padding-left: 4px;
+    }
+
+    ol.steps li strong {
+      color: var(--text-dark);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: #333;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    li strong {
+      color: var(--text-dark);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--light-blue);
+      color: var(--primary-blue);
+      font-weight: 700;
+      font-size: 0.8rem;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--divider);
+      padding: 14px 0;
+    }
+
+    .faq-item:first-child {
+      padding-top: 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-item strong {
+      display: block;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .faq-item span {
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .tip-box {
+      background: var(--light-blue);
+      border-left: 4px solid var(--primary-blue);
+      border-radius: 0 12px 12px 0;
+      padding: 14px 16px;
+      margin-top: 14px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .links-card {
+      background: linear-gradient(135deg, var(--light-blue) 0%, var(--lavender) 100%);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .links-card h2 {
+      margin: 0 0 14px;
+      font-size: 1.125rem;
+      color: var(--splash-blue);
+      font-weight: 600;
+    }
+
+    .links-card h2::before { display: none; }
+
+    .links-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .links-list li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--primary-blue);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 0 16px 40px;
+      color: var(--text-grey);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-icon" aria-hidden="true">💬</div>
+    <h1>Support &amp; Help</h1>
+    <p class="app-name">File Share: Easy File Sharing</p>
+    <p class="updated">Last updated: June 25, 2026</p>
+  </header>
+
+  <main class="container">
+
+    <div class="contact-hero-card">
+      <h2>Contact Us</h2>
+      <p>
+        Have a question, bug report, or feedback? Send us an email and we will get back to you
+        as soon as possible.
+      </p>
+      <a class="email-btn" href="mailto:Quick-Share235@gmail.com">Quick-Share235@gmail.com</a>
+    </div>
+
+    <section class="section">
+      <h2>How to Use the App</h2>
+      <p>Send files directly between nearby devices on the same Wi‑Fi network — no account required.</p>
+      <ol class="steps">
+        <li>Connect both devices to the <strong>same Wi‑Fi network</strong>.</li>
+        <li>On the <strong>receiving device</strong>, open the <strong>Receive</strong> tab and tap <strong>Start Receiving</strong>. A QR code and 4-digit PIN will appear.</li>
+        <li>On the <strong>sending device</strong>, open the <strong>Send</strong> tab, tap <strong>Scan Receiver QR</strong>, scan the code, and enter the PIN when prompted.</li>
+        <li>Tap <strong>Select Files</strong>, choose your photos, videos, or documents, then tap <strong>Send Directly</strong>.</li>
+        <li>Transfer progress appears on both devices. Received files show in the <strong>Received Files</strong> list on the receiver.</li>
+      </ol>
+      <div class="tip-box">
+        <strong>Tip:</strong> You can also pick a device from <strong>Nearby Receivers</strong> on the Send screen when both devices are on the same Wi‑Fi.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Common Questions</h2>
+
+      <div class="faq-item">
+        <strong>Transfer fails or devices are not found</strong>
+        <span>
+          Make sure both devices are on the same Wi‑Fi network. Guest or corporate networks often
+          block device-to-device traffic. Keep the receiver app open with receiving active during
+          the entire transfer.
+        </span>
+      </div>
+
+      <div class="faq-item">
+        <strong>Camera permission required</strong>
+        <span>
+          Camera access is only needed when you tap <strong>Scan Receiver QR</strong> on the Send
+          screen. You can allow it when iOS prompts you.
+        </span>
+      </div>
+
+      <div class="faq-item">
+        <strong>Local Network permission (iOS)</strong>
+        <span>
+          iOS may ask for Local Network access so the app can discover nearby receivers and
+          transfer files over Wi‑Fi. Please tap <strong>Allow</strong> when prompted.
+        </span>
+      </div>
+
+      <div class="faq-item">
+        <strong>Large file transfers</strong>
+        <span>
+          The app supports chunked uploads for large files. Keep both devices awake and connected
+          to Wi‑Fi until the transfer completes.
+        </span>
+      </div>
+
+      <div class="faq-item">
+        <strong>Can I send files without Wi‑Fi?</strong>
+        <span>
+          On supported Apple devices, offline Multipeer transfer may work between two iPhones
+          using Bluetooth when Wi‑Fi is unavailable. Start receiving on one device and use
+          <strong>Nearby Receivers</strong> on the other.
+        </span>
+      </div>
+
+      <div class="faq-item">
+        <strong>Why do I see ads?</strong>
+        <span>
+          File Share is free and may show Google AdMob ads (app open and banner ads). Ads do not
+          block file transfer and do not receive your files or transfer data.
+        </span>
+      </div>
+
+      <div class="faq-item">
+        <strong>Export received files</strong>
+        <span>
+          After receiving files, you can open, save, share, or delete them from the Received Files
+          list. Sharing via AirDrop or other apps is optional and handled by iOS.
+        </span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Requirements</h2>
+      <ul>
+        <li>Both devices usually need to be on the <strong>same Wi‑Fi network</strong></li>
+        <li>The receiver should keep the app <strong>open and receiving</strong> during transfer</li>
+        <li>No account or sign-in is required</li>
+        <li>Files are transferred device-to-device — not uploaded to our servers</li>
+      </ul>
+    </section>
+
+    <div class="links-card">
+      <h2>More Information</h2>
+      <ul class="links-list">
+        <li>
+          <a href="https://sites.google.com/view/quick-share-easy-file-sharing/home">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="mailto:Quick-Share235@gmail.com">Quick-Share235@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 File Share: Easy File Sharing. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
